@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: 700;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.chevron-down {
+  color: white;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .featured-title {
+    width: 200px;
+  } */
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+}
+
+.featured-button {
+  display: flex;
+  /* background-color: #2300bf;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-weight: bold; */
+}
+
+.feat-btn-mulai {
+  margin-right: 20px;
+  background-color: #2300bf;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+.feat-btn-full {
+  margin-right: 20px;
+  background-color: #212121;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+.feat-btn-full i {
+  height: 10px;
+}
+
+.info {
+  display: block;
+  height: 15px;
+}
+
+.feat-btn-18 {
+  background-color: #212121;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+.btn-vol-cont {
+  background-color: #212121;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+.footer1 {
+  margin: 40px;
+}
