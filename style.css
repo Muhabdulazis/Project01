@@ -1,8 +1,9 @@
 * {
   margin: 0;
+  color: #f9f9f9de;
   font-family: "Lato", sans-serif;
+  text-decoration: none;
 }
-
 .navbar {
   width: 100%;
   height: 50px;
@@ -36,21 +37,14 @@
   margin-right: 30px;
 }
 
-.menu-list-item.active {
-  font-weight: 700;
-}
-.profile-container {
+.avatar-container {
   flex: 2;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.profile-text-container {
-  margin: 0 20px;
-}
-
-.profile-picture {
+.avatar-picture {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -61,6 +55,8 @@
 .chevron-down {
   color: white;
 }
+
+/* main page */
 
 .container {
   background-color: #151515;
@@ -76,27 +72,23 @@
   padding: 50px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-/* .featured-title {
-    width: 200px;
-  } */
+.feat-title {
+  width: 400px;
+}
 
-.featured-desc {
+.feat-desc {
   width: 500px;
   color: lightgray;
   margin: 30px 0;
+  text-decoration: none;
 }
 
 .featured-button {
   display: flex;
-  /* background-color: #2300bf;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    font-weight: bold; */
+  align-items: center;
 }
 
 .feat-btn-mulai {
@@ -121,6 +113,8 @@
   border: none;
   outline: none;
   font-weight: 700;
+  text-indent: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .feat-btn-full i {
@@ -129,7 +123,7 @@
 
 .info {
   display: block;
-  height: 15px;
+  height: 18px;
 }
 
 .feat-btn-18 {
@@ -143,6 +137,7 @@
 }
 
 .btn-vol-cont {
+  margin-left: 250px;
   background-color: #212121;
   color: white;
   display: flex;

@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-        
+     <script src="https://unpkg.com/feather-icons"></script>
+   
 </head>
 <body>
     
@@ -26,21 +26,30 @@
             <img src="Assets/Logo.png">
         </div>
         
-        <h1>Masuk</h1>
-        <p>Selamat datang kembali!</p>
+        <h1>Daftar</h1>
+        <p>Selamat datang</p>
         
         <form action="#">
             <div class="title">Username</div>
-            <div class="input-box">
-                <input type="text" placeholder="Masukkan username">
-            </div>
+                 <div class="input-box">
+                      <input type="text" placeholder="Masukkan username">
+                 </div>
+
             <div class="title">Kata Sandi</div>
+                <div class="show-hide">
+                    <i class="icon-sh" data-feather="eye-off"></i>
+                </div>
+                 <div class="input-box">
+                      <input type="password" placeholder="Masukkan kata sandi" required>
+                  </div>
+            
+            <div class="title">Konfirmasi Kata Sandi</div>
             <div class="show-hide">
-                <i class="icon-sh" data-feather="eye-off"></i>
-            </div>
+                    <i class="icon-sh" data-feather="eye-off"></i>
+                </div>     
             <div class="input-box">
-                <input type="password" placeholder="Masukkan kata sandi" required>
-            </div>
+                      <input type="password" placeholder="Masukkan kata sandi" required>
+                  </div>
             
                 <ul class="daftar-forget">
                     <li>
@@ -52,22 +61,20 @@
                     </li>
                 </ul> 
               
-               <button class="btn">Masuk</button>
+               <button class="btn">Daftar</button>
                <p>Atau</p>
                <button class="btn">
                    <img class="google" src="Assets/iconn.png" alt="">
-                   Masuk dengan Gmail
+                   Daftar dengan Gmail
                 </button>
         </form>        
        </div>
 
 
+
        <!-- Icons -->
-       <script>
+    <script>
         feather.replace();
       </script>
-
-        <!-- javascript -->
-        <script src="script.js"></script>
     </body>
 </html>
