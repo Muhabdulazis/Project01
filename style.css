@@ -131,8 +131,9 @@
   color: white;
   padding: 10px 10px;
   border-radius: 50px;
-  border: none;
-  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
   font-weight: 700;
 }
 
@@ -145,8 +146,9 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: none;
-  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
   font-weight: 700;
 }
 
