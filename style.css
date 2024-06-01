@@ -178,6 +178,12 @@
 .list-bantuan {
   list-style: none;
   color: #939393;
+  padding: 10px;
+}
+
+.list-bantuan.head {
+  color: white;
+  font-weight: 500;
 }
 
 .footer1 {
