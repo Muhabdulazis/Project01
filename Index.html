@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chill Movie</title>
-    
+    <meta name="description" 
+    content="Chill adalah aplikasi berbasis web yang dirancang untuk memberi pengguna 
+    akses ke library film dan acara TV yang luas dari perangkat mereka. Chill menawarkan 
+    antarmuka yang ramah pengguna yang memungkinkan pengguna mencari film dan acara TV, 
+    dan mulai menonton secara instan. Chill menawarkan rekomendasi hasil personalisasi 
+    berdasarkan kebiasaan menonton pengguna, membantu pengguna menemukan film dan acara 
+    TV baru yang mungkin tidak mereka temukan sebelumnya. Selain itu, Chill juga menawarkan 
+    konten orisinal, termasuk film dan acara TV, yang hanya dapat ditemukan di aplikasi 
+    Chill, menjadikannya sumber yang unik dan berharga bagi pengguna.">
+        
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
    
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 
 <body>
@@ -25,9 +36,11 @@
             <div class="logo">
                 <img src="Assets/Logo.png" alt="logo">
             </div>
+            
             <div class="logo2">
                 <img src="Assets/Logo2.png" alt="logo2">
             </div>
+
             <ul>
                 <li class="list-nav"><a href="">Series</a></li>
                 <li class="list-nav"><a href="">Film</a></li>
@@ -35,20 +48,23 @@
             </ul>
         </div>
 
-
         <div class="nav-extra">
             <img class="avatar-picture" src="Assets/avatar.png" alt="">
-            <a href="#menu"><i data-feather="chevron-down"></i></a>
-                       
+            <!-- <a href="#menu"><i data-feather="chevron-down"></i></a> -->
+            <div class="toggle">
+                <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
+
+            </div>
+       
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Main Page -->
-<div class="container">
-    <div class="main-section">
-        <div class="featured-content"
+    <div class="container">
+        <div class="main-section">
+            <div class="featured-content"
                 style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('Assets/image1.png');">
 
                 <h1 class="feat-title">Duty After School</h1>
@@ -56,80 +72,235 @@
                     Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa
                     sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
 
-            <div class="featured-button">
+                <div class="featured-button">
                 <button class="feat-btn-mulai">Mulai</button>
                 <button class="feat-btn-full">
                     <i class="info" data-feather="info"></i>
                      Selengkapnya</button>
-                <button class="feat-btn-18">18 +</button>
-                <div class="volume-control">
+                <button class="feat-btn-18">18+</button>
+                    <div class="volume-control">
                     <button class="btn-vol-cont">
                         <i class="info" data-feather="volume-2"></i>
                     </button>
-                </div>              
+                    </div>              
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- SECTIION 1 -->
     
-    <!-- per section -->
-    <div class="section1">
-        <img src="Assets/image2.png">
-    </div>
-    <div class="section2">
-        <img src="Assets/image3.png">
-    </div>
-    <div class="section3">
-        <img src="Assets/image4.png">
-    </div>
-    <div class="section4">
-        <img src="Assets/image5.png">
-    </div>
-    
-    <!-- Main Page end -->
+    <div class="wraper">
+        <h1 class="section-title">Melanjutkan Nonton Film</h1>
+        <ul class="corousel">
+            
+            <li class="card-item">
+                <div class="icon-arrow-left">
+                    <i class="fa-solid fa-arrow-left" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
 
-    <!-- Footer -->
-<div class="footer">
-    <div class="logo-copy-right">
-        <img src="Assets/Logo.png" alt>
-        <!-- <i class="info" data-feather="at-sign"></i>  -->
-            <p>@2023 Chill All Rights Reserved</p>     
+                <img src="Assets/Comp 1/1.png" alt="">
+                <p class="card-title">Don't Look Up
+                    <span class="nilai-rating">
+                        <i class="fa-solid fa-star fa-xs" style="color: white; padding: 3px;"></i> 4.5/5
+                    </span>
+                </p> 
+            </li>
+            
+            <li class="card-item">
+                <img src="Assets/Comp 1/2.png" alt="">
+                <p class="card-title">The Monster
+                    <span class="nilai-rating">
+                        <i class="fa-solid fa-star fa-xs" style="color: white; padding: 3px;"></i> 4.5/5
+                    </span>
+                </p> 
+            </li>
+
+            <li class="card-item">
+                <img src="Assets/Comp 1/3.png" alt="">
+                <p class="card-title">Blue Lock
+                    <span class="nilai-rating">
+                        <i class="fa-solid fa-star fa-xs" style="color: white; padding: 3px;"></i> 4.5/5
+                    </span>
+                </p> 
+            </li>
+            
+            <li class="card-item">
+                <div class="icon-arrow-right">
+                    <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+                <img src="Assets/Comp 1/4.png" alt="">
+                <p class="card-title">A Man Called Otto
+                    <span class="nilai-rating">
+                        <i class="fa-solid fa-star fa-xs" style="color: white; padding: 3px;"></i> 4.5/5
+                    </span>
+                </p> 
+            </li>
+        </ul>
+        
     </div>
-    
-    <div class="genre-container">
-        <!-- <p class="p-genre">Genre</p> -->
-        <ul class="menu-genre">
-           <li class="list-genre head">Genre</li> 
-           <li class="list-genre">Aksi</li> 
-           <li class="list-genre">Anak-anak</li> 
-           <li class="list-genre">Anime</li> 
-           <li class="list-genre">Britania</li> 
-           <li class="list-genre">Drama</li> 
-           <li class="list-genre">Fantasi Ilmiah & Fantasi</li> 
-           <li class="list-genre">Kejahatan</li> 
-           <li class="list-genre">KDrama</li> 
+
+    <!-- SECTION 2 -->
+    <div class="wraper">
+        <h1 class="section-title">Top Rating Film dan Series Hari ini</h1>
+        <ul class="corousel">
+            <li class="card-item">
+                <!-- icon arrow left -->
+                <div class="icon-arrow-left">
+                    <i class="fa-solid fa-arrow-left" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+            
+                <img src="Assets/Comp 2/1.png" alt="">
+            </li>
+            
+            <li class="card-item">
+                <img src="Assets/Comp 2/2.png" alt=""> 
+            </li>
+            <li class="card-item">
+                <img src="Assets/Comp 2/3.png" alt=""> 
+            </li>
+            <li class="card-item">
+                <img src="Assets/Comp 2/4.png" alt=""> 
+            </li>
+         
+            <li class="card-item">
+                <div class="icon-arrow-right">
+                    <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+                <img src="Assets/Comp 2/5.png" alt="">
+            </li>
         </ul>
     </div>
 
-<div class="bantuan">
-    <!-- <p class="p-bantuan">Bantuan</p> -->
-    <ul class="bantuan-menu">
-        <li class="list-bantuan head">Bantuan</li>
-        <li class="list-bantuan">FAQ</li>
-        <li class="list-bantuan">Kontak Kami</li>
-        <li class="list-bantuan">Privasi</li>
-        <li class="list-bantuan">Syarat & Ketentuan</li>
-    </ul>
-</div>
-
-
-
-</div>
-    
-    <div class="footer1">
-        <img class="footer1" src="Assets/footer.png">
+    <!-- SECTION 3 -->
+    <div class="wraper">
+        <h1 class="section-title">Film Trending</h1>
+        <ul class="corousel">
+            <li class="card-item">
+                <!-- icon arrow left -->
+                <div class="icon-arrow-left">
+                    <i class="fa-solid fa-arrow-left" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+            
+                <img src="Assets/Comp 3/1.png" alt="">
+            </li>
+            
+            <li class="card-item">
+                <img src="Assets/Comp 3/2.png" alt=""> 
+            </li>
+            <li class="card-item">
+                <img src="Assets/Comp 3/3.png" alt=""> 
+            </li>
+            <li class="card-item">
+                <img src="Assets/Comp 3/4.png" alt=""> 
+            </li>
+         
+            <li class="card-item">
+                <div class="icon-arrow-right">
+                    <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+                <img src="Assets/Comp 3/5.png" alt="">
+            </li>
+        </ul>
     </div>
-</div>
+    
+    <!-- SECTION 4 -->
+    <div class="wraper">
+        <h1 class="section-title">Rilis Baru</h1>
+        <ul class="corousel">
+            <li class="card-item">
+                <!-- icon arrow left -->
+                <div class="icon-arrow-left">
+                    <i class="fa-solid fa-arrow-left" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+            
+                <img src="Assets/Comp 4/1.png" alt="">
+            </li>
+            
+            <li class="card-item">
+                <img src="Assets/Comp 4/2.png" alt=""> 
+            </li>
+            <li class="card-item">
+                <img src="Assets/Comp 4/3.png" alt=""> 
+            </li>
+            <li class="card-item">
+                <img src="Assets/Comp 4/4.png" alt=""> 
+            </li>
+         
+            <li class="card-item">
+                <div class="icon-arrow-right">
+                    <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
+                    background-color: rgb(85, 84, 84);"></i>
+                </div>
+                <img src="Assets/Comp 4/5.png" alt="">
+            </li>
+        </ul>
+    </div>
+
+        
+    <!-- Main Page end -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="Assets/Logo.png" alt>
+            <p>@2023 Chill All Rights Reserved</p>     
+        </div>
+    
+        <div class="menu-genre">
+            <!-- <h4 class="head-genre">Genre</h4> -->
+            <table class="tab-genre">
+                <tr>
+                    <td class="head-footer">Genre</td>
+                </tr>
+                <tr>
+                    <td>Aksi</td>
+                    <td>Drama</td>
+                    <td>Komedi</td>
+                    <td>Sains & Alam</td>
+                </tr>
+                <tr>
+                    <td>Anak-anak</td>
+                    <td>Fantasi Ilmiah & fantasi</td>
+                    <td>Petualangan</td>
+                    <td>Thriller</td>
+                </tr>
+                <tr>
+                    <td>Anime</td>
+                    <td>Kejahatan</td>
+                    <td>Perang</td>
+                </tr>
+                <tr>
+                    <td>Britania</td>
+                    <td>KDrama</td>
+                    <td>Romantis</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="bantuan">
+            <ul class="bantuan-menu">
+                <h4 class="head-footer">Bantuan</h4>
+                <!-- <li class="list-bantuan head">Bantuan</li> -->
+                <li class="list-bantuan">FAQ</li>
+                <li class="list-bantuan">Kontak Kami</li>
+                <li class="list-bantuan">Privasi</li>
+                <li class="list-bantuan">Syarat & Ketentuan</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FOOTER END -->
+
+
 
 
 
