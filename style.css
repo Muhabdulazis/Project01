@@ -7,12 +7,13 @@
 body {
   background-color: #151515;
   font-family: "Lato", sans-serif;
-  /* letter-spacing: 1px; */
+  
 }
 
 /* Navbar */
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -72,29 +73,59 @@ body {
   align-items: center;
 }
 
-.toggle {
+#toggle {
   cursor: pointer;
 }
 
-
-/* Resposive */
-/* Destop */
-@media screen  {
-  .logo2 {
-      display: none;
-  }    
+#toggle.active {
+  transform: rotate(180deg);
 }
 
-/* mobile */
-@media screen and ( max-width: 576px) {
-  .logo {
-      display: none;
-  }    
+/* menu chevron */
+.chevron-menu {
+  display: none;
+  position: absolute;
+  width: 250px;
+  height: auto;
+  background-color: black;
+  padding: 30px 30px px;
+  bottom: -130px;
+  right: 80px;
+  z-index: 10;
+}
 
-  .logo2 {
-    display: flex;
+.chevron-menu.active {
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: auto;
+  background-color: black;
+  bottom: -130px;
+  right: 80px;
+  z-index: 10;
+  
+}
+
+
+.head-menu-chev {
+  padding: 10px;
+}
+
+.list-menu-chev {
+padding: 2px;
+list-style: none;
+margin: 10px;
   }
+  
+.list-menu-chev a{
+  text-decoration: none;
+  color: lightgray;
+  padding-left: 10px ;
+  padding-right: 20px;
+
 }
+
+
 
 
 
@@ -105,8 +136,22 @@ body {
   min-height: calc(100vh - 100px);
 }
 
+.main-section {
+  position: relative;
+
+}
+
+.bg {
+  position: absolute;
+  z-index: -10;
+}
+
+.bg-img {
+  width: 100%;
+}
+
 .featured-content {
-  padding: 100px;
+  padding: 250px 0 0 50px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -173,7 +218,7 @@ body {
 }
 
 .btn-vol-cont {
-  margin-left: 250px;
+  margin-left: 180px;
   background-color: #212121;
   color: white;
   display: flex;
@@ -271,6 +316,7 @@ body {
   display: grid;
   grid-template-columns: 30% 50% 20%;
   padding-inline: 7%;
+  padding-block-end: 20px;
 }
 
 .logo-footer {
@@ -278,7 +324,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 10%;
+}
 
+.logo-footer img{
+  margin: 10px 0 10px 0;
 }
 
 .head-footer {
@@ -307,9 +356,61 @@ h4 {
 
 }
 
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-flow: wrap; */
-  /* width: 300px;
-  height: 200px;
+.menu-foot-m {
+  /* background-color: #2300bf; */
+  display: none;
+  padding: 20px 0 20px;
+}
+
+.item-foot-m {
+  /* background-color: aqua; */
+  padding: 0px 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+}
+
+
+
+
+
+/* Resposive */
+/* Destop */
+@media screen  {
+  .logo2 {
+      display: none;
+  }    
+}
+
+/* mobile */
+@media screen and ( max-width: 576px) {
+  .logo {
+      display: none;
+  }    
+
+  .logo2 {
+    display: flex;
+  }
+
+  .chevron-menu{
+    right: 40px;
+  }
+
+  .menu-genre{
+    display: none;
+  }
+
+  .menu-bantuan{
+    display: none;
+  }
+
+  .footer{
+    display: block;
+  }
+
+  .menu-foot-m {
+    display: block;
+  }
 }

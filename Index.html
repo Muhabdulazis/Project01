@@ -14,23 +14,23 @@
     konten orisinal, termasuk film dan acara TV, yang hanya dapat ditemukan di aplikasi 
     Chill, menjadikannya sumber yang unik dan berharga bagi pengguna.">
         
-    <!-- Style -->
+    <!-- STYLE -->
     <link rel="stylesheet" href="style.css">
    
-    <!-- Font -->
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     
-    <!-- Icons -->
+    <!-- ICONS -->
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 
 <body>
     
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="menu-nav">
             <div class="logo">
@@ -50,22 +50,49 @@
 
         <div class="nav-extra">
             <img class="avatar-picture" src="Assets/avatar.png" alt="">
-            <!-- <a href="#menu"><i data-feather="chevron-down"></i></a> -->
-            <div class="toggle">
+           
+            <div id="toggle">
                 <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
 
             </div>
        
         </div>
+
+
+        <!-- menu chevron -->
+        
+        <div class="chevron-menu">
+               
+            <ul class="head-menu-chev">
+                
+                <li class="list-menu-chev">
+                    <i class="fa-solid fa-user" style="color: white;"></i>
+                    <a href=""> Profil Saya</a></li>
+                <li class="list-menu-chev">
+                    <i class="fa-solid fa-star fa-xm" style="color: white;"></i>
+                    <a href="">Ubah Premium</a></li>
+                <li class="list-menu-chev">
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i>
+                    <a href=""> Keluar</a></li>
+               
+            </ul>
+        </div>
+
+
+
     </nav>
-    <!-- Navbar End -->
+    <!-- NAVBAR END -->
 
 
-    <!-- Main Page -->
+    <!-- MAIN PAGE -->
     <div class="container">
         <div class="main-section">
+            <div class="bg">
+                <img class="bg-img" src="Assets/image1.png" alt="">
+
+            </div>
             <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('Assets/image1.png');">
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('Assets/image1.png'); ">
 
                 <h1 class="feat-title">Duty After School</h1>
                 <p class="feat-desc">Sebuah benda tak dikenal mengambil alih dunia. dalam keputusasaan,
@@ -139,7 +166,6 @@
                 </p> 
             </li>
         </ul>
-        
     </div>
 
     <!-- SECTION 2 -->
@@ -167,10 +193,12 @@
             </li>
          
             <li class="card-item">
+                <!-- icon arrow right -->
                 <div class="icon-arrow-right">
                     <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
                     background-color: rgb(85, 84, 84);"></i>
                 </div>
+
                 <img src="Assets/Comp 2/5.png" alt="">
             </li>
         </ul>
@@ -201,10 +229,12 @@
             </li>
          
             <li class="card-item">
+                <!-- icon arrow right -->
                 <div class="icon-arrow-right">
                     <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
                     background-color: rgb(85, 84, 84);"></i>
                 </div>
+
                 <img src="Assets/Comp 3/5.png" alt="">
             </li>
         </ul>
@@ -235,19 +265,21 @@
             </li>
          
             <li class="card-item">
+                <!-- icon arrow right -->
                 <div class="icon-arrow-right">
                     <i class="fa-solid fa-arrow-right" style="border-radius: 50%; padding: 12px; 
                     background-color: rgb(85, 84, 84);"></i>
                 </div>
+
                 <img src="Assets/Comp 4/5.png" alt="">
             </li>
         </ul>
     </div>
 
         
-    <!-- Main Page end -->
+    <!-- MAIN PAGE END -->
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div class="footer">
         <div class="logo-footer">
             <img src="Assets/Logo.png" alt>
@@ -255,7 +287,7 @@
         </div>
     
         <div class="menu-genre">
-            <!-- <h4 class="head-genre">Genre</h4> -->
+          
             <table class="tab-genre">
                 <tr>
                     <td class="head-footer">Genre</td>
@@ -286,15 +318,27 @@
         </div>
 
 
-        <div class="bantuan">
+        <div class="menu-bantuan">
             <ul class="bantuan-menu">
                 <h4 class="head-footer">Bantuan</h4>
-                <!-- <li class="list-bantuan head">Bantuan</li> -->
+           
                 <li class="list-bantuan">FAQ</li>
                 <li class="list-bantuan">Kontak Kami</li>
                 <li class="list-bantuan">Privasi</li>
                 <li class="list-bantuan">Syarat & Ketentuan</li>
             </ul>
+        </div>
+
+        <!-- menu footer mobile -->
+        <div class="menu-foot-m">
+            <h4 class="item-foot-m">Genre
+                <i class="fa-solid fa-chevron-right"></i>
+            </h4>
+            <h4 class="item-foot-m">Bantuan
+                <i class="fa-solid fa-chevron-right"></i>
+            </h4>
+            
+
         </div>
     </div>
 
@@ -304,9 +348,22 @@
 
 
 
-<!-- Icons -->
+<!-- ICONS -->
     <script>
         feather.replace();
       </script>
+
+    <script>
+        //toggle class active
+        const chevNav = document.querySelector(".chevron-menu");
+        const chevIcon = document.getElementById("toggle")
+        //ketika di clik
+        document.querySelector('#toggle')
+        onclick = () => {
+            chevNav.classList.toggle('active');
+            chevIcon.classList.toggle('active');
+
+        }
+    </script>  
 </body>
 </html>
